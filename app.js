@@ -92,6 +92,9 @@ start.addEventListener( "click", () =>{
         start.disabled = false;
         pause.disabled = true;
         reset.disabled = true;
+        seconds = 0;
+        minute = personMinut%60;
+        soat = Math.floor(personMinut/60);
     })
 }); 
 

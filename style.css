@@ -7,14 +7,16 @@ html{
     height: 100%;
 }
 body{
-    background-color: #4158D0;
+    font-family: "Roboto Mono", "Roboto Mono", "Vazirmatn", monospace;
+    background-color: #020024;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
     padding-top: 200px;
 }
 
 .section {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -24,9 +26,9 @@ body{
 }
 .title {
     font-size: 60px;
-    color: #fff;
+    color: #c69f68;
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     /* max-width: max-content; */
     padding: 5px;
 }
@@ -37,11 +39,18 @@ body{
 .start, .stop, .reset {
     padding: 8px 16px;
     border: none;
-    background-color: #da6207;
-    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
-    color: #fff;
+    background-color: #141a22;
+    color: #e89b30;
     font-size: 30px;
     border-radius: 10px;
+    transition: all 0.4s linear;
+}
+
+.start:hover , .stop:hover, .reset:hover {
+    cursor: pointer;
+    /* background-color: #ccccb5; */
+    color: #ccccb5;
+    /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
 
 }
 .start:disabled{
