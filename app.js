@@ -67,13 +67,13 @@ start.addEventListener( "click", () =>{
             }
             
         }
-        if(minute == 0 && soat == 0 && seconds == 0){ 
+        if(minute === 0 && soat === 0 && seconds === 0){ 
             start.disabled = true;
             pause.disabled = true;
             alert("Time out");
             clearInterval(interval);
         }
-    }, 10)
+    }, 1000)
 
     start.disabled = true;
     pause.disabled = false;
